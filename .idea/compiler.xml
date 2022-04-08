@@ -20,6 +20,12 @@
         <module name="130-wordle" />
         <module name="01-TEMPLATE" />
       </profile>
+      <profile name="Annotation profile for Unknown" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name=".mvn" />
+      </profile>
     </annotationProcessing>
   </component>
 </project>

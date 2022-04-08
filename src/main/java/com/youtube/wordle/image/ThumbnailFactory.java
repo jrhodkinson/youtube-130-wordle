@@ -41,7 +41,7 @@ public class ThumbnailFactory
         g.setColor(Color.BLACK);
         g.drawString(dateString, dateX, dateY);
 
-        Font wordleFont = new Font("Helvetica Neue", BOLD, 124);
+        Font wordleFont = new Font("SansSerif", BOLD, 124);
         FontMetrics wordleFontMetrics = g.getFontMetrics(wordleFont);
         g.setFont(wordleFont);
 
