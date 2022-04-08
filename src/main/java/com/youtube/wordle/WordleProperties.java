@@ -5,6 +5,8 @@ import com.youtube.wordle.youtube.VideoId;
 
 import java.io.File;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 public class WordleProperties
 {
     public String applicationName()
@@ -19,7 +21,12 @@ public class WordleProperties
 
     public String email()
     {
-        return "jack@jackhodkinson.com";
+        return new String(
+                new byte[] {
+                        106, 97, 99, 107, 64, 106, 97, 99, 107, 104, 111, 100, 107, 105, 110, 115, 111, 110, 46, 99, 111, 109
+                },
+                UTF_8
+        );
     }
 
     public VideoId videoId()
