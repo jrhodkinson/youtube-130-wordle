@@ -1,7 +1,9 @@
-package com.youtube.wordle.solver;
+package com.youtube.wordle.browser;
 
 import com.youtube.wordle.WordleProperties;
-import com.youtube.wordle.browser.BrowserWordle;
+import com.youtube.wordle.solver.GreedyMinMax;
+import com.youtube.wordle.solver.WordList;
+import com.youtube.wordle.solver.WordleSolver;
 import com.youtube.wordle.solver.WordleState.Solved;
 import org.junit.jupiter.api.Test;
 
