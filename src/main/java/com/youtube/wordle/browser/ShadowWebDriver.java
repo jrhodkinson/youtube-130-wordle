@@ -34,6 +34,7 @@ public class ShadowWebDriver implements AutoCloseable
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
 
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
