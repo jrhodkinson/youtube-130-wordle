@@ -31,7 +31,7 @@ public class WordleProperties
 
     public VideoId videoId()
     {
-        return new VideoId("M50pe3giieI");
+        return new VideoId("j39gXQzsyBs");
     }
 
     public String title(Word word)
