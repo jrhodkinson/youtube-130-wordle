@@ -13,6 +13,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import static java.awt.Font.BOLD;
+import static java.awt.RenderingHints.KEY_TEXT_ANTIALIASING;
+import static java.awt.RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB;
 import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 import static java.lang.String.valueOf;
 
@@ -23,6 +25,8 @@ public class ThumbnailFactory
         BufferedImage image = new BufferedImage(1280, 720, TYPE_INT_RGB);
 
         Graphics2D g = image.createGraphics();
+        g.setRenderingHint(KEY_TEXT_ANTIALIASING, VALUE_TEXT_ANTIALIAS_LCD_HRGB);
+
         g.setColor(Color.WHITE);
         g.fillRect(0, 0, image.getWidth(), image.getHeight());
 
@@ -41,7 +45,7 @@ public class ThumbnailFactory
         g.setColor(Color.BLACK);
         g.drawString(dateString, dateX, dateY);
 
-        Font wordleFont = new Font("SansSerif", BOLD, 124);
+        Font wordleFont = new Font("Helvetica Neue", BOLD, 124);
         FontMetrics wordleFontMetrics = g.getFontMetrics(wordleFont);
         g.setFont(wordleFont);
 
