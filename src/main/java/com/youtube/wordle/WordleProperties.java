@@ -36,7 +36,7 @@ public class WordleProperties
 
     public String title(Word word)
     {
-        return "Today's Wordle is %s".formatted(word);
+        return "I programmed this video to solve wordle";
     }
 
     public String wordleUrl()
