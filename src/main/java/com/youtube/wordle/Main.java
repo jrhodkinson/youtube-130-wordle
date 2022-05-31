@@ -36,7 +36,7 @@ public class Main
             Thumbnail thumbnail = thumbnail(LocalDate.now(), solution);
 
             YouTubeApi api = YouTubeApiFactory.api(properties);
-            api.setTitle(properties.videoId(), properties.title(solution));
+//            api.setTitle(properties.videoId(), properties.title(solution));
             api.setThumbnail(properties.videoId(), thumbnail);
         }
     }
